@@ -28,14 +28,14 @@ jobs:
           path: "repo"
 
       - name: Setup JDK 11
-        uses: actions/setup-java@​v2
+        uses: actions/setup-java@​v5
         with:
           java-version: 11
           distribution: zulu
           cache: gradle
 
       - name: Setup Android SDK
-        uses: android-actions/setup-android@​v3
+        uses: android-actions/setup-android@​v4
         with:
           cmdline-tools-version: 9862592 # 10.0 is the last version working with JDK 11
           log-accepted-android-sdk-licenses: false
